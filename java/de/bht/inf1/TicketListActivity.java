@@ -69,7 +69,7 @@ public class TicketListActivity extends ListActivity {
 		 *      zu (Schauen Sie sich dazu die Methodensignatur an, um korrekt zu parametrisieren)
 		 *      Hinweis: Solange Sie Aufgabe 3b noch nicht gelöst haben wird der Preis eines
 		 *               jeden Fahrscheins als -1.00 EUR in der Liste ausgegeben
-		 *       
+		 *
 		 * iii. Weisen sie während eines Schleifendurchlaufs dem bereits deklarierten Feld
 		 *      "ticketsWithPrices" eine Kopie des korrespondierenden Wertes aus dem Array 
 		 *      "TICKET_NAMES" zu. Die Kopie soll einen Zeilenumbruch sowie den berechneten 
@@ -85,11 +85,11 @@ public class TicketListActivity extends ListActivity {
 			String ticketName = TICKET_NAMES[i];
 
 			double price = calculateTicketPrice(ticketName);
-
+            String ticketWithPrice = createTicketWithPriceEntry(ticketName, price);
 
             Log.i("BHT", ticketName.toString()+": "+price);
-			
-			
+
+            createTicketWithPriceEntry[i] = ticketWithPrice;
 		}
         // [Fügen Sie Ihren Code nachfolgend ein]
 
@@ -154,8 +154,7 @@ public class TicketListActivity extends ListActivity {
 
         if (ticketName.contains("ermäßigt")){
             price=price*0.5;
-        }
-        if (ticketName.contains("Student")){
+        }else if (ticketName.contains("Student")){
             price=price*0.75;
         }
         return price;

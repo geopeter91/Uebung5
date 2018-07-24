@@ -52,7 +52,6 @@ public class StartActivity extends Activity {
         appName.setTextColor(getResources().getColor(colorResourceCode));
     }
 
-
     /**
      * Verknüpft die Berührung des "Button"-Elements der Startseite
      * mit einer Absicht, die Fahrschein-Liste anzuzeigen.
