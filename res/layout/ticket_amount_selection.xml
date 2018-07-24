@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:padding="10dp" android:weightSum="1">
+    <TextView 
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Gewählter Fahrschein:" />
+    <TextView 
+        android:id="@+id/tv_selected_ticket" 
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="_A | B | C | D_" />
+    <TextView 
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Einzelpreis:" />
+    <TextView 
+        android:id="@+id/tv_price" 
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="_Einzelpreis_" />
+    <TextView 
+        android:layout_height="wrap_content"
+	    android:layout_width="wrap_content"
+	    android:layout_marginTop="10dp"
+	    android:textAppearance="?android:attr/textAppearanceLarge"
+	    android:text="Anzahl Fahrscheine:" />
+	    
+	<LinearLayout
+	  xmlns:android="http://schemas.android.com/apk/res/android"
+	  android:orientation="horizontal"
+	  android:layout_width="fill_parent"
+	  android:layout_height="wrap_content"
+	  android:layout_marginTop="10dp">	    
+	    <EditText android:id="@+id/et_ticket_amount" 
+	        android:layout_height="wrap_content"
+	        android:layout_width="wrap_content"
+	        android:layout_gravity="left"
+	        android:gravity="right"
+	        android:width="75dp" 
+	        android:inputType="number"
+	        android:maxLength="2"
+	        android:text="1">
+	        <requestFocus></requestFocus>
+	    </EditText>
+	    <TextView 
+	        android:layout_height="fill_parent"
+	        android:layout_width="wrap_content"
+	        android:gravity="fill_vertical"
+	        android:layout_marginLeft="20dp"
+	        android:text="Rabatt: " />
+        <TextView 
+            android:id="@+id/tv_discount"
+            android:layout_height="fill_parent"
+            android:layout_width="wrap_content"
+            android:gravity="fill_vertical"
+            android:layout_marginLeft="10dp"
+            android:text="Keiner" />
+    </LinearLayout>
+    
+    <TextView  
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_marginTop="50dp"
+        android:gravity="center_horizontal"
+        android:textStyle="bold" 
+        android:textSize="30dp"
+        android:text="Gesamtpreis"/>       
+    
+    <TextView  
+        android:id="@+id/tv_total_price"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_marginTop="15dp"
+        android:gravity="center_horizontal"
+        android:textStyle="bold" 
+        android:textColor="@color/cYellow"
+        android:textSize="50dp"
+        android:text="_Total Price_"/>
+</LinearLayout>

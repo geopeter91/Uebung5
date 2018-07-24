@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Fahrpreiskalkulator</string>
+    <string name="title_ticket_overview">Fahrscheinübersicht</string>
+    <string name="title_ticket_amount">Fahrscheinanzahl</string>
+    <string name="splash_display_name">Fahrpreis\nKalkulator</string>
+    <string name="copyright_note">&#169; 2018, Stadt Studentenhausen</string>
+    <string name="btn_start">Starten</string>
+    <string name="btn_map">Map</string>
+    <string name="title_activity_maps">Map</string>
+</resources>
